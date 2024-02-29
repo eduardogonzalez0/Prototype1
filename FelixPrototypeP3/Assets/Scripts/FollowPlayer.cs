@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
@@ -10,8 +11,9 @@ public class FollowPlayer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    
     public GameObject player;
+    private Vector3 Offset
     void Update()
     {
         transform.position = player.transform.position + new Vector3(0, 5, -7);
